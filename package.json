@@ -1,0 +1,26 @@
+{
+  "name": "ouniguoji",
+  "version": "1.0.0",
+  "description": "Ou Ni Guo Ji mobile web'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/YunMeiCS/ON_MFontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^1.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-uglify": "^2.1.0"
+  }
+}
