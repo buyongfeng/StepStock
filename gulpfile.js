@@ -2,7 +2,7 @@
  * @Author: step
  * @Date:   2017-03-15 17:15:06
  * @Last Modified by:   step
- * @Last Modified time: 2017-03-24 10:46:29
+ * @Last Modified time: 2017-03-31 11:07:37
  */
 
 'use strict';
@@ -38,7 +38,7 @@ gulp.task('css', function() {
 
 /*js*/
 gulp.task('script', function() {
-    gulp.src('src/js/*.js')
+    gulp.src('src/js/**/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(reload({
@@ -121,7 +121,7 @@ gulp.task('ser', ['style', 'css', 'script', 'font', 'images', 'fileinclude'], fu
     gulp.watch('src/**/*.html', ['fileinclude']);
     gulp.watch('src/style/*.less', ['style']);
     gulp.watch('src/style/*.css', ['css']);
-    gulp.watch('src/js/*.js', ['script']);
+    gulp.watch('src/js/**/*.js', ['script']);
     gulp.watch('src/fonts/*.*', ['font']);
     gulp.watch('src/images/**/*.*', ['images']);
 

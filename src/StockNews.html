@@ -1,0 +1,30 @@
+<h1>股票新闻</h1>
+<form class="form-inline step-mb10">
+    <label class="sr-only" for="inlineFormInput">股票名称</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="stockName" ng-model="stockName" placeholder="股票名称">
+    <button class="btn btn-primary" ng-click="search()">查询</button>
+</form>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>标题</th>
+                <th>来源</th>
+                <th>时间</th>
+                <th>具体时间</th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="item in newsList">
+                    <td>{{$index + 1}}</td>
+                    <td>
+                        <a ng-href="{{item.url}}" target="_blank">{{item.full_title}}</a>
+                    </td>
+                    <td>{{item.src}}</td>
+                    <td>{{item.pdate}}</td>
+                    <td>{{item.pdate_src}}</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</div>
