@@ -1,2 +1,5 @@
-# StepStock
-Step Stock Tool 1
+# 股票新闻搜索
+
+#### angular1.x实现
+ * 指令实现菜单自动focus
+#### 数据来源（聚合数据）
